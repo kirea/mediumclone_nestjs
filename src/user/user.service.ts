@@ -37,12 +37,8 @@ export class UserService {
 
   async login(loginDto: LoginUserDto): Promise<UserEntity> {
     const user = await this.userRepository.findOne(
-      {
-        email: loginDto.email,
-      },
-      {
-        select: ['id', 'email', 'username', 'image', 'bio', 'password'],
-      },
+      { email: loginDto.email },
+      { select: ['id', 'email', 'username', 'image', 'bio', 'password'] },
     );
     if (!user) {
       throw new HttpException(
@@ -59,6 +55,10 @@ export class UserService {
     }
     delete user.password;
     return user;
+  }
+
+  findById(id: number): Promise<UserEntity> {
+    return this.userRepository.findOne(id);
   }
 
   generateJwt(user: UserEntity): string {
