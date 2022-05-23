@@ -33,7 +33,6 @@ PUT http://localhost:3000/user
 Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
 Content-Type: application/json
 
-
 {
   "user": {
     "bio": "The individual captures awareness which is not private."
