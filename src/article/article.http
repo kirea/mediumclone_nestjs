@@ -1,3 +1,17 @@
 ### Create article
 POST http://localhost:3000/articles
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
 Content-Type: application/json
+
+{
+  "article": {
+    "title": "Admirals warp with ionic cannon at the fantastic cabin!",
+    "description": "Pattern, nuclear flux, and friendship.",
+    "body": "The lieutenant commander is quickly spheroid.",
+    "tagList": [
+      "hold",
+      "my",
+      "shit"
+    ]
+  }
+}
