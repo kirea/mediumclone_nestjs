@@ -23,3 +23,22 @@ GET http://localhost:3000/articles/admirals-warp-with-ionic-cannon-at-the-fantas
 ### Delete single article
 DELETE http://localhost:3000/articles/admirals-warp-with-ionic-cannon-at-the-fantastic-cabin!-2a5uej
 Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
+
+
+### Update single article
+PUT http://localhost:3000/articles/admirals-warp-with-ionic-cannon-at-the-fantastic-cabin!-e3uj21
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
+Content-Type: application/json
+
+{
+  "article": {
+    "title": "Why does the planet wobble?",
+    "description": "Vision, ionic cannon, and plasma.",
+    "body": "Hypnosis at the infinity room that is when cloudy planets reproduce."
+  }
+}
+
+
+### Get articles feed
+GET http://localhost:3000/articles?tag=my
+
