@@ -140,11 +140,11 @@ export class ArticleService {
     }
 
     const articles = await queryBuilder.getMany();
-    const articlesWithFavorities = articles.map((article) => {
+    const articlesWithFavorites = articles.map((article) => {
       const favorited = favoriteIds.includes(article.id);
       return { ...article, favorited };
     });
-    return { articles: articlesWithFavorities, articlesCount };
+    return { articles: articlesWithFavorites, articlesCount };
   }
 
   async addArticleToFavorites(
