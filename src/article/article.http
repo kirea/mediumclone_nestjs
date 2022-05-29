@@ -42,3 +42,13 @@ Content-Type: application/json
 ### Get articles feed
 GET http://localhost:3000/articles?tag=my
 
+
+### Like article
+POST http://localhost:3000/articles/admirals-warp-with-ionic-cannon-at-the-fantastic-cabin!-e3uj21/favorite
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
+
+
+### dislike article
+DELETE http://localhost:3000/articles/admirals-warp-with-ionic-cannon-at-the-fantastic-cabin!-e3uj21/favorite
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
+
