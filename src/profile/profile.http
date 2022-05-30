@@ -1,0 +1,2 @@
+### Get profile
+GET http://localhost:3000/profiles/Ryth
