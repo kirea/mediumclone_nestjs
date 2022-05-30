@@ -1,2 +1,12 @@
 ### Get profile
 GET http://localhost:3000/profiles/Ryth
+
+
+### Follow user
+POST http://localhost:3000/profiles/Uzzer/follow
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
+
+
+### Unfollow user
+DELETE http://localhost:3000/profiles/Uzzer/follow
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwidXNlcm5hbWUiOiJSeXRoIiwiZW1haWwiOiJyeXRoQGVtLmFpbCIsImlhdCI6MTY1Mjk0NDIyNX0.1Le-vaHeyXzCum4tzzE1DQf71djMNAilGMOJxT1Fw7c
