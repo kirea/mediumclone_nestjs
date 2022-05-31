@@ -39,7 +39,6 @@ export class ProfileService {
     };
   }
 
-
   async followProfile(
     currentUserId: number,
     profileUsername: string,
@@ -95,11 +94,6 @@ export class ProfileService {
         HttpStatus.BAD_REQUEST,
       );
     }
-
-    const follow = this.followRepository.findOne({
-      followerId: currentUserId,
-      followingId: user.id,
-    });
 
     await this.followRepository.delete({
       followerId: currentUserId,
